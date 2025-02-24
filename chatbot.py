@@ -46,6 +46,8 @@ def predict_class(sentence):
     return return_list
 
 def get_response(intents_list, intents_json, input_message):
+    if not intents_list:
+        return "I'm not sure how to respond to that."
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
