@@ -5,7 +5,10 @@ import nltk
 import numpy as np
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
-
+nltk.download('punkt_tab')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 lemmatizer = WordNetLemmatizer()
 
 intents = json.loads(open('intents.json').read())
