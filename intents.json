@@ -17,6 +17,76 @@
         ]
       }
     ,{
+      "tag": "general_greetings",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I help?"
+      ]
+    },
+    {
+      "tag": "general_farewell",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "Bye",
+        "Take care"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!",
+        "Bye! Feel free to come back if you have more questions."
+      ]
+    },
+    {
+      "tag": "general_thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "I appreciate it",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem! Happy to help.",
+        "Anytime! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "general_help",
+      "patterns": [
+        "Can you help me?",
+        "I need assistance",
+        "Help me please",
+        "What can you do?"
+      ],
+      "responses": [
+        "Sure! I'm here to help. What do you need assistance with?",
+        "Of course! Let me know what you need help with.",
+        "I'm here to assist you. Please tell me how I can help."
+      ]
+    },
+    {
+      "tag": "general_information",
+      "patterns": [
+        "Tell me something interesting",
+        "Do you know any fun facts?",
+        "Share some information",
+        "What can you tell me?"
+      ],
+      "responses": [
+        "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+        "Here's a fun fact: Octopuses have three hearts!",
+        "Sure! Did you know that the Eiffel Tower can be 15 cm taller during the summer due to thermal expansion?"
+      ]
+    },{
       "tag": "Egypt",
       "patterns": [
         "Tell me about Egypt.",
@@ -1917,7 +1987,642 @@
           "responses": [
               "The Temple of Dakka is a Greco-Roman temple dedicated to the god Thoth. It was relocated to protect it from the waters of Lake Nasser."
           ]
-      }
+      },{
+        "tag": "egyptian_museum",
+        "patterns": [
+          "Tell me about the Egyptian Museum.",
+          "What can I see at the Egyptian Museum?",
+          "Where is the Egyptian Museum located?"
+        ],
+        "responses": [
+          "The Egyptian Museum, located in Cairo, houses the world's largest collection of ancient Egyptian artifacts. It features treasures from Tutankhamun's tomb, including his golden mask, as well as mummies, jewelry, and other significant relics from Egypt's Pharaonic history."
+        ]
+      },
+      {
+        "tag": "grand_egyptian_museum",
+        "patterns": [
+          "Tell me about the Grand Egyptian Museum.",
+          "What is special about the Grand Egyptian Museum?",
+          "Where is the Grand Egyptian Museum located?"
+        ],
+        "responses": [
+          "The Grand Egyptian Museum, located near the Pyramids of Giza, is set to be the largest archaeological museum in the world. It will showcase a vast collection of artifacts, including the complete Tutankhamun collection, and is designed to provide a comprehensive view of Egypt's ancient history."
+        ]
+      },
+      {
+        "tag": "luxor_museum",
+        "patterns": [
+          "Tell me about the Luxor Museum.",
+          "What can I see at the Luxor Museum?",
+          "Where is the Luxor Museum located?"
+        ],
+        "responses": [
+          "The Luxor Museum, situated in Luxor, offers a range of artifacts from the Luxor region, including items from the tomb of Tutankhamun and a collection of statues from the New Kingdom. It provides insights into the history of ancient Thebes."
+        ]
+      },
+      {
+        "tag": "nubian_museum",
+        "patterns": [
+          "Tell me about the Nubian Museum.",
+          "What can I see at the Nubian Museum?",
+          "Where is the Nubian Museum located?"
+        ],
+        "responses": [
+          "The Nubian Museum, located in Aswan, focuses on the history and culture of Nubia. It features artifacts from the Nubian region, including pottery, jewelry, and tools, as well as exhibits on the Nubian lifestyle and the impact of the Aswan High Dam."
+        ]
+      },
+      {
+        "tag": "museum_of_islamic_art",
+        "patterns": [
+          "Tell me about the Museum of Islamic Art.",
+          "What can I see at the Museum of Islamic Art?",
+          "Where is the Museum of Islamic Art located?"
+        ],
+        "responses": [
+          "The Museum of Islamic Art, located in Cairo, features a comprehensive collection of Islamic artifacts from various periods. It includes ceramics, textiles, manuscripts, and metalwork, showcasing the rich artistic heritage of the Islamic world."
+        ]
+      },{
+        "tag": "coptic_museum",
+        "patterns": [
+          "Tell me about the Coptic Museum.",
+          "What can I see at the Coptic Museum?",
+          "Where is the Coptic Museum located?"
+        ],
+        "responses": [
+          "The Coptic Museum, located in Cairo, houses the world's largest collection of Coptic Christian artifacts. It showcases a wide array of textiles, manuscripts, and artworks that reflect the history and culture of Coptic Christianity in Egypt."
+        ]
+      },
+      {
+        "tag": "alexandria_national_museum",
+        "patterns": [
+          "Tell me about the Alexandria National Museum.",
+          "What can I see at the Alexandria National Museum?",
+          "Where is the Alexandria National Museum located?"
+        ],
+        "responses": [
+          "The Alexandria National Museum, located in Alexandria, offers a comprehensive overview of Egypt's history from the Pharaonic era to the modern age. It features artifacts from the city's Greco-Roman past, as well as Islamic and Coptic exhibits."
+        ]
+      },
+      {
+        "tag": "gayer_anderson_museum",
+        "patterns": [
+          "Tell me about the Gayer-Anderson Museum.",
+          "What can I see at the Gayer-Anderson Museum?",
+          "Where is the Gayer-Anderson Museum located?"
+        ],
+        "responses": [
+          "The Gayer-Anderson Museum, located in Cairo, is a historic house museum that showcases a collection of Islamic art and artifacts. The museum is set in two adjoining houses and offers a glimpse into the lifestyle of the early 20th century."
+        ]
+      },
+      {
+        "tag": "manial_palace_museum",
+        "patterns": [
+          "Tell me about the Manial Palace Museum.",
+          "What can I see at the Manial Palace Museum?",
+          "Where is the Manial Palace Museum located?"
+        ],
+        "responses": [
+          "The Manial Palace Museum, located in Cairo, is a beautifully preserved royal palace that showcases a mix of Islamic, Ottoman, and European architectural styles. It was built by Prince Mohammed Ali in the late 19th century and features exquisite gardens and interiors."
+        ]
+      },
+      {
+        "tag": "agriculture_museum",
+        "patterns": [
+          "Tell me about the Agriculture Museum in Egypt.",
+          "What can I see at the Agriculture Museum?",
+          "Where is the Agriculture Museum located?"
+        ],
+        "responses": [
+          "The Agriculture Museum, located in Cairo, is one of the largest agricultural museums in the world. It features exhibits on the history of agriculture in Egypt, including ancient farming tools, crops, and irrigation techniques."
+        ]
+      },
+      {
+        "tag": "railway_museum",
+        "patterns": [
+          "Tell me about the Railway Museum in Egypt.",
+          "What can I see at the Railway Museum?",
+          "Where is the Railway Museum located?"
+        ],
+        "responses": [
+          "The Railway Museum, located in Cairo, showcases the history of Egypt's railway system. It features a collection of vintage locomotives, carriages, and railway memorabilia, highlighting the development of rail transport in Egypt."
+        ]
+      },
+      {
+        "tag": "military_museum",
+        "patterns": [
+          "Tell me about the Military Museum in Egypt.",
+          "What can I see at the Military Museum?",
+          "Where is the Military Museum located?"
+        ],
+        "responses": [
+          "The Military Museum, located in Cairo's Citadel, offers a comprehensive look at Egypt's military history. It features exhibits on ancient warfare, modern military equipment, and significant battles in Egypt's history."
+        ]
+      },
+      {
+        "tag": "museum_of_modern_egyptian_art",
+        "patterns": [
+          "Tell me about the Museum of Modern Egyptian Art.",
+          "What can I see at the Museum of Modern Egyptian Art?",
+          "Where is the Museum of Modern Egyptian Art located?"
+        ],
+        "responses": [
+          "The Museum of Modern Egyptian Art, located in Cairo, showcases a vast collection of contemporary artworks by Egyptian artists. It features paintings, sculptures, and installations that reflect modern Egyptian culture and society."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era",
+        "patterns": [
+          "Which museum should I visit if I like ancient history?",
+          "What museum is best for learning about ancient Egypt?",
+          "Where can I learn about the Pharaonic era?",
+          "Recommend a museum for ancient Egyptian artifacts."
+        ],
+        "responses": [
+          "If you're interested in ancient history, the Egyptian Museum in Cairo is a must-visit. It houses the world's largest collection of ancient Egyptian artifacts, including treasures from Tutankhamun's tomb. The Grand Egyptian Museum, near the Pyramids of Giza, will also offer a comprehensive view of Egypt's ancient history once it opens."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_modern",
+        "patterns": [
+          "Which museum should I visit if I like modern history?",
+          "What museum is best for learning about modern Egypt?",
+          "Where can I learn about contemporary Egyptian art?",
+          "Recommend a museum for modern Egyptian culture."
+        ],
+        "responses": [
+          "For modern history and contemporary art, the Museum of Modern Egyptian Art in Cairo is an excellent choice. It features a vast collection of artworks by modern Egyptian artists, reflecting the country's contemporary culture and society."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_islamic",
+        "patterns": [
+          "Which museum should I visit if I like Islamic history?",
+          "What museum is best for learning about Islamic art?",
+          "Where can I learn about Islamic culture in Egypt?",
+          "Recommend a museum for Islamic artifacts."
+        ],
+        "responses": [
+          "The Museum of Islamic Art in Cairo is perfect for those interested in Islamic history and culture. It features a comprehensive collection of Islamic artifacts, including ceramics, textiles, manuscripts, and metalwork."
+        ]
+      },{
+        "tag": "museum_recommendation_by_era_coptic",
+        "patterns": [
+          "Which museum should I visit if I like Coptic history?",
+          "What museum is best for learning about Coptic Christianity?",
+          "Where can I learn about Coptic culture in Egypt?",
+          "Recommend a museum for Coptic artifacts."
+        ],
+        "responses": [
+          "The Coptic Museum in Cairo is the best place to explore Coptic history and culture. It houses the world's largest collection of Coptic Christian artifacts, including textiles, manuscripts, and artworks."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_greco_roman",
+        "patterns": [
+          "Which museum should I visit if I like Greco-Roman history?",
+          "What museum is best for learning about the Greco-Roman period in Egypt?",
+          "Where can I learn about Alexandria's ancient history?",
+          "Recommend a museum for Greco-Roman artifacts."
+        ],
+        "responses": [
+          "The Alexandria National Museum offers a comprehensive overview of Egypt's Greco-Roman history. It features artifacts from Alexandria's unique past, including items from the city's Greco-Roman period."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_nubian",
+        "patterns": [
+          "Which museum should I visit if I like Nubian history?",
+          "What museum is best for learning about Nubian culture?",
+          "Where can I learn about the history of Nubia?",
+          "Recommend a museum for Nubian artifacts."
+        ],
+        "responses": [
+          "The Nubian Museum in Aswan is dedicated to the history and culture of Nubia. It features a wide range of artifacts from the Nubian region, including pottery, jewelry, and tools."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_military",
+        "patterns": [
+          "Which museum should I visit if I like military history?",
+          "What museum is best for learning about Egypt's military history?",
+          "Where can I learn about ancient and modern warfare in Egypt?",
+          "Recommend a museum for military artifacts."
+        ],
+        "responses": [
+          "The Military Museum in Cairo's Citadel offers a comprehensive look at Egypt's military history. It features exhibits on ancient warfare, modern military equipment, and significant battles in Egypt's history."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_railway",
+        "patterns": [
+          "Which museum should I visit if I like railway history?",
+          "What museum is best for learning about Egypt's railways?",
+          "Where can I learn about the history of rail transport in Egypt?",
+          "Recommend a museum for railway artifacts."
+        ],
+        "responses": [
+          "The Railway Museum in Cairo showcases the history of Egypt's railway system. It features a collection of vintage locomotives, carriages, and railway memorabilia."
+        ]
+      },
+      {
+        "tag": "museum_recommendation_by_era_agriculture",
+        "patterns": [
+          "Which museum should I visit if I like agricultural history?",
+          "What museum is best for learning about agriculture in Egypt?",
+          "Where can I learn about ancient farming techniques in Egypt?",
+          "Recommend a museum for agricultural artifacts."
+        ],
+        "responses": [
+          "The Agriculture Museum in Cairo is one of the largest agricultural museums in the world. It features exhibits on the history of agriculture in Egypt, including ancient farming tools, crops, and irrigation techniques."
+        ]
+      },
+        {
+          "tag": "Royal Carriages Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Royal Carriages Museum?",
+            "When is the Royal Carriages Museum open?",
+            "What time does the Royal Carriages Museum close?",
+            "Tell me the visiting hours for the Royal Carriages Museum"
+          ],
+          "responses": [
+            "The Royal Carriages Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:15 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Cairo Airport Museum T2 Hours",
+          "patterns": [
+            "What are the opening hours of Cairo Airport Museum Terminal 2?",
+            "When is the Cairo Airport Museum Terminal 2 open?",
+            "What time does Cairo Airport Museum T2 close?"
+          ],
+          "responses": [
+            "Cairo International Airport Museum Terminal 2 is open 24 hours daily, with regular visiting hours from 9:00 AM to 3:00 PM. During Ramadan, the same hours apply with last tickets sold at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Cairo Airport Museum T3 Hours",
+          "patterns": [
+            "What are the opening hours of Cairo Airport Museum Terminal 3?",
+            "When is the Cairo Airport Museum Terminal 3 open?",
+            "What time does Cairo Airport Museum T3 close?"
+          ],
+          "responses": [
+            "Cairo International Airport Museum Terminal 3 is open 24 hours daily. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Crocodile Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Crocodile Museum?",
+            "When is the Crocodile Museum open?",
+            "What time does the Crocodile Museum close?"
+          ],
+          "responses": [
+            "The Crocodile Museum is open from 7:00 AM to 9:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Gayer Anderson Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Gayer Anderson Museum?",
+            "When is the Gayer Anderson Museum open?",
+            "What time does the Gayer Anderson Museum close?"
+          ],
+          "responses": [
+            "The Gayer Anderson Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:30 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Graeco-Roman Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Graeco-Roman Museum?",
+            "When is the Graeco-Roman Museum open?",
+            "What time does the Graeco-Roman Museum close?"
+          ],
+          "responses": [
+            "The Graeco-Roman Museum is open from 9:00 AM to 5:00 PM. During Ramadan, hours are 9:00 AM to 4:00 PM with last tickets at 3:00 PM."
+          ]
+        },
+        {
+          "tag": "Hurghada Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Hurghada Museum?",
+            "When is the Hurghada Museum open?",
+            "What time does the Hurghada Museum close?"
+          ],
+          "responses": [
+            "The Hurghada Museum has two sessions: 10:00 AM to 1:00 PM (last tickets at 12:00 PM) and evening hours 5:00 PM to 11:00 PM (last tickets at 10:00 PM). During Ramadan, morning hours are 10:00 AM to 2:00 PM and evening hours are 8:00 PM to 11:00 PM."
+          ]
+        },
+        {
+          "tag": "Imhotep Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Imhotep Museum?",
+            "When is the Imhotep Museum open?",
+            "What time does the Imhotep Museum close?"
+          ],
+          "responses": [
+            "The Imhotep Museum is open from 8:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Egyptian Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Egyptian Museum?",
+            "When is the Egyptian Museum open?",
+            "What time does the Egyptian Museum close?"
+          ],
+          "responses": [
+            "The Egyptian Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 4:00 PM with last tickets at 3:00 PM."
+          ]
+        },
+        {
+          "tag": "NMEC Hours",
+          "patterns": [
+            "What are the opening hours of the National Museum of Egyptian Civilization?",
+            "When is NMEC open?",
+            "What time does the National Museum of Egyptian Civilization close?"
+          ],
+          "responses": [
+            "The National Museum of Egyptian Civilization is open daily from 9:00 AM to 5:00 PM, with evening hours from 6:00 PM to 9:00 PM. During Ramadan, hours are 9:00 AM to 4:00 PM with last tickets at 3:00 PM."
+          ]
+        },
+        {
+          "tag": "Helwan Corner Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Helwan Corner Museum?",
+            "When is the Helwan Corner Museum open?",
+            "What time does the Helwan Corner Museum close?"
+          ],
+          "responses": [
+            "The Helwan Corner Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:30 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Kafr El-Sheikh Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Kafr El-Sheikh Museum?",
+            "When is the Kafr El-Sheikh Museum open?",
+            "What time does the Kafr El-Sheikh Museum close?"
+          ],
+          "responses": [
+            "The Kafr El-Sheikh Museum is open from 9:00 AM to 4:00 PM, with last tickets sold at 3:30 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Manial Palace Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Manial Palace Museum?",
+            "When is the Manial Palace Museum open?",
+            "What time does the Manial Palace Museum close?"
+          ],
+          "responses": [
+            "The Manial Palace Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Mummification Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Mummification Museum?",
+            "When is the Mummification Museum open?",
+            "What time does the Mummification Museum close?"
+          ],
+          "responses": [
+            "The Mummification Museum has two sessions: 9:00 AM to 2:00 PM (last tickets at 1:30 PM) and evening hours 5:00 PM to 9:00 PM (last tickets at 8:30 PM). During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Museum of Islamic Art Hours",
+          "patterns": [
+            "What are the opening hours of the Museum of Islamic Art?",
+            "When is the Museum of Islamic Art open?",
+            "What time does the Museum of Islamic Art close?"
+          ],
+          "responses": [
+            "The Museum of Islamic Art is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "National Military Museum Hours",
+          "patterns": [
+            "What are the opening hours of the National Military Museum?",
+            "When is the National Military Museum open?",
+            "What time does the National Military Museum close?"
+          ],
+          "responses": [
+            "The National Military Museum is open from 8:00 AM to 4:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "National Police Museum Hours",
+          "patterns": [
+            "What are the opening hours of the National Police Museum?",
+            "When is the National Police Museum open?",
+            "What time does the National Police Museum close?"
+          ],
+          "responses": [
+            "The National Police Museum is open from 8:00 AM to 4:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Nubia Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Nubia Museum?",
+            "When is the Nubia Museum open?",
+            "What time does the Nubia Museum close?"
+          ],
+          "responses": [
+            "The Nubia Museum is open from 9:00 AM to 5:00 PM (last tickets at 4:00 PM), with evening hours on Thursday and Friday from 6:00 PM to 9:00 PM (last tickets at 8:00 PM). During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Royal Jewelry Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Royal Jewelry Museum?",
+            "When is the Royal Jewelry Museum open?",
+            "What time does the Royal Jewelry Museum close?"
+          ],
+          "responses": [
+            "The Royal Jewelry Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Sharm al-Sheikh Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Sharm al-Sheikh Museum?",
+            "When is the Sharm al-Sheikh Museum open?",
+            "What time does the Sharm al-Sheikh Museum close?"
+          ],
+          "responses": [
+            "The Sharm al-Sheikh Museum has two sessions: 10:00 AM to 1:00 PM (last tickets at 12:00 PM) and evening hours 5:00 PM to 11:00 PM (last tickets at 10:00 PM). During Ramadan, morning hours are 10:00 AM to 2:00 PM and evening hours are 8:00 PM to 11:00 PM."
+          ]
+        },
+        {
+          "tag": "Coptic Museum Hours",
+          "patterns": [
+            "What are the opening hours of the Coptic Museum?",
+            "When is the Coptic Museum open?",
+            "What time does the Coptic Museum close?"
+          ],
+          "responses": [
+            "The Coptic Museum is open from 9:00 AM to 5:00 PM, with last tickets sold at 4:00 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "National Museum of Suez Hours",
+          "patterns": [
+            "What are the opening hours of the National Museum of Suez?",
+            "When is the National Museum of Suez open?",
+            "What time does the National Museum of Suez close?"
+          ],
+          "responses": [
+            "The National Museum of Suez is open from 9:00 AM to 3:00 PM, with last tickets sold at 2:30 PM. During Ramadan, hours are 9:00 AM to 3:00 PM with last tickets at 2:00 PM."
+          ]
+        },
+        {
+          "tag": "Helwan Corner Museum Prices",
+          "patterns": [
+            "How much are tickets for the Helwan Corner Museum?",
+            "What is the entrance fee for the Helwan Corner Museum?",
+            "What are the ticket prices at the Helwan Corner Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 100 EGP and student tickets are 50 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 10 EGP."
+          ]
+        },
+        {
+          "tag": "Hurghada Museum Prices",
+          "patterns": [
+            "How much are tickets for the Hurghada Museum?",
+            "What is the entrance fee for the Hurghada Museum?",
+            "What are the ticket prices at the Hurghada Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 200 EGP and student tickets are 100 EGP. For Egyptians and Arabs, adult tickets are 80 EGP and student tickets are 40 EGP. Audio tours are available for 50 EGP (foreigners) and 30 EGP (Egyptians/Arabs)."
+          ]
+        },
+        {
+          "tag": "Imhotep Museum Prices",
+          "patterns": [
+            "How much are tickets for the Imhotep Museum?",
+            "What is the entrance fee for the Imhotep Museum?",
+            "What are the ticket prices at the Imhotep Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 600 EGP and student tickets are 300 EGP. For Egyptians and Arabs, adult tickets are 30 EGP and student tickets are 10 EGP. This includes entry to both Saqqara area and Imhotep Museum."
+          ]
+        },
+        {
+          "tag": "Manial Palace Museum Prices",
+          "patterns": [
+            "How much are tickets for the Manial Palace Museum?",
+            "What is the entrance fee for the Manial Palace Museum?",
+            "What are the ticket prices at the Manial Palace Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 220 EGP and student tickets are 110 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 5 EGP."
+          ]
+        },
+        {
+          "tag": "Mummification Museum Prices",
+          "patterns": [
+            "How much are tickets for the Mummification Museum?",
+            "What is the entrance fee for the Mummification Museum?",
+            "What are the ticket prices at the Mummification Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 220 EGP and student tickets are 110 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 5 EGP."
+          ]
+        },
+        {
+          "tag": "Museum of Islamic Art Prices",
+          "patterns": [
+            "How much are tickets for the Museum of Islamic Art?",
+            "What is the entrance fee for the Museum of Islamic Art?",
+            "What are the ticket prices at the Museum of Islamic Art?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 340 EGP and student tickets are 170 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 10 EGP."
+          ]
+        },
+        {
+          "tag": "National Military Museum Prices",
+          "patterns": [
+            "How much are tickets for the National Military Museum?",
+            "What is the entrance fee for the National Military Museum?",
+            "What are the ticket prices at the National Military Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 200 EGP and student tickets are 100 EGP. For Egyptians and Arabs, adult tickets are 60 EGP and student tickets are 30 EGP. This includes entry to both Cairo Citadel and National Police Museum."
+          ]
+        },
+        {
+          "tag": "National Police Museum Prices",
+          "patterns": [
+            "How much are tickets for the National Police Museum?",
+            "What is the entrance fee for the National Police Museum?",
+            "What are the ticket prices at the National Police Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 200 EGP and student tickets are 100 EGP. For Egyptians and Arabs, adult tickets are 60 EGP and student tickets are 30 EGP. This includes entry to both Cairo Citadel and National Military Museum."
+          ]
+        },
+        {
+          "tag": "Nubia Museum Prices",
+          "patterns": [
+            "How much are tickets for the Nubia Museum?",
+            "What is the entrance fee for the Nubia Museum?",
+            "What are the ticket prices at the Nubia Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 400 EGP and student tickets are 200 EGP. For Egyptians and Arabs, adult tickets are 30 EGP and student tickets are 10 EGP."
+          ]
+        },
+        {
+          "tag": "Royal Jewelry Museum Prices",
+          "patterns": [
+            "How much are tickets for the Royal Jewelry Museum?",
+            "What is the entrance fee for the Royal Jewelry Museum?",
+            "What are the ticket prices at the Royal Jewelry Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 220 EGP and student tickets are 110 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 5 EGP."
+          ]
+        },
+        {
+          "tag": "Sharm al-Sheikh Museum Prices",
+          "patterns": [
+            "How much are tickets for the Sharm al-Sheikh Museum?",
+            "What is the entrance fee for the Sharm al-Sheikh Museum?",
+            "What are the ticket prices at the Sharm al-Sheikh Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 200 EGP and student tickets are 100 EGP. For Egyptians and Arabs, adult tickets are 40 EGP and student tickets are 20 EGP. Audio tours are available for 50 EGP (foreigners) and 30 EGP (Egyptians/Arabs)."
+          ]
+        },
+        {
+          "tag": "Coptic Museum Prices",
+          "patterns": [
+            "How much are tickets for the Coptic Museum?",
+            "What is the entrance fee for the Coptic Museum?",
+            "What are the ticket prices at the Coptic Museum?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 280 EGP and student tickets are 140 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 10 EGP."
+          ]
+        },
+        {
+          "tag": "National Museum of Suez Prices",
+          "patterns": [
+            "How much are tickets for the National Museum of Suez?",
+            "What is the entrance fee for the National Museum of Suez?",
+            "What are the ticket prices at the National Museum of Suez?"
+          ],
+          "responses": [
+            "For foreigners, adult tickets are 180 EGP and student tickets are 90 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 10 EGP."
+          ]
+        }
+      
       
       
     
