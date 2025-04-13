@@ -2607,12 +2607,117 @@
           "responses": [
             "For foreigners, adult tickets are 180 EGP and student tickets are 90 EGP. For Egyptians and Arabs, adult tickets are 20 EGP and student tickets are 10 EGP."
           ]
-        }
-      
-      
-      
-    
-    
+        },
+        {
+          "tag": "Colossi of Memnon",
+          "patterns": [
+              "Tell me about the Colossi of Memnon.",
+              "What are the Colossi of Memnon known for?",
+              "Give me an overview of the Colossi of Memnon."
+          ],
+          "responses": [
+              "The Colossi of Memnon are two massive stone statues of Pharaoh Amenhotep III located near Luxor. They once guarded his mortuary temple and have stood for over 3,000 years."
+          ]
+      },
+      {
+          "tag": "Golden Mask of Tutankhamun",
+          "patterns": [
+              "Tell me about the Golden Mask of Tutankhamun.",
+              "What is the Golden Mask of Tutankhamun known for?",
+              "Give me an overview of the Golden Mask of Tutankhamun."
+          ],
+          "responses": [
+              "The Golden Mask of Tutankhamun is one of the most iconic treasures of ancient Egypt. Made of gold and precious stones, it was placed over the pharaoh’s mummy and symbolizes royal power and divinity."
+          ]
+      },
+      {
+          "tag": "Golden Throne of Tutankhamun",
+          "patterns": [
+              "Tell me about the Golden Throne of Tutankhamun.",
+              "What is the Golden Throne of Tutankhamun known for?",
+              "Give me an overview of the Golden Throne of Tutankhamun."
+          ],
+          "responses": [
+              "The Golden Throne of Tutankhamun is a richly decorated chair found in his tomb. It features scenes of the young king with his queen and is adorned with gold, silver, and semi-precious stones."
+          ]
+      },
+      {
+          "tag": "Head of Queen Hatshepsut",
+          "patterns": [
+              "Tell me about the Head of Queen Hatshepsut.",
+              "What is the Head of Queen Hatshepsut known for?",
+              "Give me an overview of the Head of Queen Hatshepsut."
+          ],
+          "responses": [
+              "The Head of Queen Hatshepsut is a well-preserved sculpture depicting Egypt’s most successful female pharaoh. It reflects her strong rule and the artistic excellence of the New Kingdom."
+          ]
+      },
+      {
+          "tag": "Mummy of Ramses II",
+          "patterns": [
+              "Tell me about the Mummy of Ramses II.",
+              "What is the Mummy of Ramses II known for?",
+              "Give me an overview of the Mummy of Ramses II."
+          ],
+          "responses": [
+              "The Mummy of Ramses II is one of the most well-preserved royal mummies. Ramses II, known as one of Egypt’s greatest pharaohs, ruled for 66 years and his mummy is on display in the National Museum of Egyptian Civilization."
+          ]
+      },
+      {
+          "tag": "Narmer Palette",
+          "patterns": [
+              "Tell me about the Narmer Palette.",
+              "What is the Narmer Palette known for?",
+              "Give me an overview of the Narmer Palette."
+          ],
+          "responses": [
+              "The Narmer Palette is a ceremonial stone tablet dating to around 3100 BCE. It depicts the unification of Upper and Lower Egypt by King Narmer and is a key artifact in Egyptian history."
+          ]
+      },
+      {
+          "tag": "Sphinx",
+          "patterns": [
+              "Tell me about the Sphinx.",
+              "What is the Sphinx known for?",
+              "Give me an overview of the Sphinx."
+          ],
+          "responses": [
+              "The Great Sphinx of Giza is a limestone statue with the body of a lion and the head of a pharaoh, likely Khafre. It symbolizes strength and wisdom and is one of Egypt’s most iconic monuments."
+          ]
+      },
+      {
+          "tag": "Statue of Khafre",
+          "patterns": [
+              "Tell me about the Statue of Khafre.",
+              "What is the Statue of Khafre known for?",
+              "Give me an overview of the Statue of Khafre."
+          ],
+          "responses": [
+              "The Statue of Khafre is a masterpiece of Old Kingdom sculpture. It depicts the pharaoh seated with the falcon god Horus behind his head, symbolizing divine protection and kingship."
+          ]
+      },
+      {
+          "tag": "The Solar Boat of Khufu",
+          "patterns": [
+              "Tell me about the Solar Boat of Khufu.",
+              "What is the Solar Boat of Khufu known for?",
+              "Give me an overview of the Solar Boat of Khufu."
+          ],
+          "responses": [
+              "The Solar Boat of Khufu is a full-sized ancient Egyptian boat buried near the Great Pyramid. It was likely used for the pharaoh’s journey in the afterlife and is incredibly well-preserved."
+          ]
+      },
+      {
+          "tag": "The Statue of Sekhmet",
+          "patterns": [
+              "Tell me about the Statue of Sekhmet.",
+              "What is the Statue of Sekhmet known for?",
+              "Give me an overview of the Statue of Sekhmet."
+          ],
+          "responses": [
+              "The Statue of Sekhmet represents the lion-headed goddess of war and healing. Many statues of Sekhmet were commissioned by Pharaoh Amenhotep III and are known for their powerful and fearsome presence."
+          ]
+      }
   ]
   
   
