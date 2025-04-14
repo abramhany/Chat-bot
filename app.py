@@ -87,8 +87,7 @@ def chat():
         response = get_response(ints, intents, message)
         
         return jsonify({
-            "response": response,
-            "intents": ints
+            "response": response
         })
     
     except Exception as e:

@@ -5,6 +5,9 @@ import nltk
 import numpy as np
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
+
+
+
 nltk.download('punkt_tab')
 nltk.download('punkt')
 nltk.download('wordnet')
