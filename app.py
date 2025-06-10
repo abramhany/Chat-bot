@@ -68,32 +68,28 @@ def test():
     return jsonify({"status": "API is working!"})
 
 # Main chatbot endpoint
-@app.route('/chat', methods=['POST', 'GET'])
+@app.route('/chat', methods=['POST'])
 def chat():
     try:
-        # Get message from request
-        if request.method == 'POST':
-            if request.is_json:
-                data = request.get_json()
-                message = str(data.get('message', ''))
-            else:
-                message = str(request.form.get('message', ''))
-        else:  # GET request
-            message = str(request.args.get('message', ''))
-
+        # Try to get message from JSON data
+        if request.is_json:
+            data = request.get_json()
+            message = str(data.get('message', ''))
+        # If not JSON, try to get from form data
+        else:
+            message = str(request.form.get('message', request.form.get('question', '')))
+        
         # Check if message is empty
         if not message:
             return jsonify({"error": "Message is required"}), 400
-
-        # Get prediction and response
+        
         ints = predict_class(message)
         response = get_response(ints, intents, message)
-
+        
         return jsonify({
-            "response": response,
-            "message": message
+            "response": response
         })
-
+    
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
