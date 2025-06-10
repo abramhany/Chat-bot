@@ -71,39 +71,19 @@ def test():
 @app.route('/chat', methods=['POST', 'GET'])
 def chat():
     try:
-        print("Request Method:", request.method)
-        print("Request Headers:", dict(request.headers))
-        print("Request Data:", request.get_data())
-        print("Request Form:", request.form)
-        print("Request Args:", request.args)
-        print("Request JSON:", request.get_json(silent=True))
-
         # Get message from request
-        message = None
-        
         if request.method == 'POST':
             if request.is_json:
                 data = request.get_json()
-                message = data.get('message') if data else None
+                message = str(data.get('message', ''))
             else:
-                message = request.form.get('message')
+                message = str(request.form.get('message', ''))
         else:  # GET request
-            message = request.args.get('message')
-
-        print("Extracted Message:", message)
+            message = str(request.args.get('message', ''))
 
         # Check if message is empty
         if not message:
-            return jsonify({
-                "error": "Message is required",
-                "debug_info": {
-                    "method": request.method,
-                    "is_json": request.is_json,
-                    "form_data": dict(request.form),
-                    "args": dict(request.args),
-                    "json_data": request.get_json(silent=True)
-                }
-            }), 400
+            return jsonify({"error": "Message is required"}), 400
 
         # Get prediction and response
         ints = predict_class(message)
@@ -115,9 +95,8 @@ def chat():
         })
 
     except Exception as e:
-        print("Error in chat endpoint:", str(e))
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8000))
-    app.run(host='0.0.0.0', port=port, debug=True) 
+    app.run(host='0.0.0.0', port=port, debug=False) 
