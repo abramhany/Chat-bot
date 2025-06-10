@@ -10,27 +10,25 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Set environment variables
-ENV PYTHONUNBUFFERED=1
-ENV PIP_NO_CACHE_DIR=1
-ENV TF_CPP_MIN_LOG_LEVEL=2
-ENV TF_ENABLE_ONEDNN_OPTS=0
-ENV CUDA_VISIBLE_DEVICES=-1
-
 # Copy requirements first to leverage Docker cache
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application
-COPY . .
+# Install Python dependencies with specific flags
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Download NLTK data
 RUN python -c "import nltk; nltk.download('punkt'); nltk.download('wordnet')"
 
+# Copy the rest of the application
+COPY . .
+
 # Expose the port the app runs on
 EXPOSE 8000
 
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8000
+
 # Command to run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"] 
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "1", "--threads", "2", "app:app"] 
