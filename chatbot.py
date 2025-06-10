@@ -48,7 +48,7 @@ def predict_class(sentence):
     return_list = []
     for r in results:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
-    #print(f"Predicted intents: {return_list}")  # Debugging line
+    print(f"Predicted intents: {return_list}")  # Debugging line
     return return_list
 
 def get_response(intents_list, intents_json, input_message):
