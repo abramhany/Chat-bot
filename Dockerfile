@@ -1,11 +1,12 @@
+# Use Python 3.9 as base image
 FROM python:3.9-slim
 
+# Set working directory
 WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
+    build-essential \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
@@ -19,18 +20,17 @@ ENV CUDA_VISIBLE_DEVICES=-1
 # Copy requirements first to leverage Docker cache
 COPY requirements.txt .
 
-# Install Python dependencies with specific flags for blis
-RUN pip install --no-cache-dir -r requirements.txt \
-    && pip install --no-cache-dir blis==0.7.9 --no-binary blis
-
-# Download NLTK data
-RUN python -c "import nltk; nltk.download('punkt'); nltk.download('wordnet'); nltk.download('omw-1.4')"
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
 COPY . .
+
+# Download NLTK data
+RUN python -c "import nltk; nltk.download('punkt'); nltk.download('wordnet')"
 
 # Expose the port the app runs on
 EXPOSE 8000
 
 # Command to run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "1", "--threads", "8", "app:app"] 
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"] 
