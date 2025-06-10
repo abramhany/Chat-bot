@@ -29,6 +29,8 @@ EXPOSE 8000
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PORT=8000
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=production
 
 # Command to run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "1", "--threads", "2", "app:app"] 
+CMD gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 2 --timeout 0 app:app 

@@ -11,7 +11,8 @@ import os
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Configure CORS to allow all origins
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Initialize lemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -68,8 +69,11 @@ def test():
     return jsonify({"status": "API is working!"})
 
 # Main chatbot endpoint
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['POST', 'GET', 'OPTIONS'])
 def chat():
+    if request.method == 'OPTIONS':
+        return '', 200
+        
     try:
         # Try to get message from JSON data
         if request.is_json:
@@ -87,10 +91,12 @@ def chat():
         response = get_response(ints, intents, message)
         
         return jsonify({
-            "response": response
+            "response": response,
+            "message": message
         })
     
     except Exception as e:
+        print(f"Error in chat endpoint: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
