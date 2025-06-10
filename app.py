@@ -68,7 +68,7 @@ def test():
     return jsonify({"status": "API is working!"})
 
 # Main chatbot endpoint
-@app.route('/chat', methods=['POST', 'GET'])
+@app.route('/chat', methods=['POST'])
 def chat():
     try:
         # Get message from request
@@ -91,7 +91,6 @@ def chat():
 
         return jsonify({
             "response": response,
-            "message": message
         })
 
     except Exception as e:
