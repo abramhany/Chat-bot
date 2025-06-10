@@ -8,6 +8,11 @@ import numpy as np
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 import os
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -19,12 +24,14 @@ lemmatizer = WordNetLemmatizer()
 
 # Load data
 try:
+    logger.info("Loading model and data files...")
     intents = json.loads(open('intents.json').read())
     words = pickle.load(open('words.pkl', 'rb'))
     classes = pickle.load(open('classes.pkl', 'rb'))
     model = tf.keras.models.load_model('chatbot_model.h5')
+    logger.info("Model and data files loaded successfully")
 except Exception as e:
-    print(f"Error loading files: {str(e)}")
+    logger.error(f"Error loading files: {str(e)}")
     raise
 
 def clean_up_sentence(sentence):
@@ -66,6 +73,7 @@ def get_response(intents_list, intents_json, input_message):
 # Test route
 @app.route('/test', methods=['GET'])
 def test():
+    logger.info("Test endpoint called")
     return jsonify({"status": "API is working!"})
 
 # Main chatbot endpoint
@@ -75,20 +83,28 @@ def chat():
         return '', 200
         
     try:
+        logger.info(f"Chat endpoint called with method: {request.method}")
+        logger.info(f"Request headers: {dict(request.headers)}")
+        
         # Try to get message from JSON data
         if request.is_json:
             data = request.get_json()
             message = str(data.get('message', ''))
+            logger.info(f"Received JSON data: {data}")
         # If not JSON, try to get from form data
         else:
             message = str(request.form.get('message', request.form.get('question', '')))
+            logger.info(f"Received form data: {dict(request.form)}")
         
         # Check if message is empty
         if not message:
+            logger.warning("Empty message received")
             return jsonify({"error": "Message is required"}), 400
         
+        logger.info(f"Processing message: {message}")
         ints = predict_class(message)
         response = get_response(ints, intents, message)
+        logger.info(f"Generated response: {response}")
         
         return jsonify({
             "response": response,
@@ -96,9 +112,10 @@ def chat():
         })
     
     except Exception as e:
-        print(f"Error in chat endpoint: {str(e)}")
+        logger.error(f"Error in chat endpoint: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8000))
+    port = int(os.environ.get('PORT', 8080))
+    logger.info(f"Starting server on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False) 
